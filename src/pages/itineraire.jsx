@@ -28,27 +28,19 @@ function Itineraire() {
 
     // Fonction exécutée lors du clic sur le bouton Rechercher
     async function handleSearch() {
-
         try {
-            // Début du chargement
             setLoading(true);
-
-            // Réinitialisation de l'erreur précédente
             setErreur("");
 
-            // Appel de l'API Iraka et attente de sa réponse
-            const data = await getItineraire(depart, destination);
-        } catch (error) {
+            setResultat(await getItineraire(depart, destination));
 
-            // Récupération du message d'erreur
+        } catch (error) {
+            console.error(error);
             setErreur(error.message);
 
         } finally {
-
-            // Arrêt du chargement, même en cas d'erreur
             setLoading(false);
         }
-        console.log("Résultat API :", data);
     }
 
     // Partie JSX : interface utilisateur
