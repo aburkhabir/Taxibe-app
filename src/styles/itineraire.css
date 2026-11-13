@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.itineraire-page {
+    min-height: 100vh;
+    padding: 40px 20px;
+    background: #050505;
+    font-family: Arial, sans-serif;
+}
+
+/* Titre principal */
+.itineraire-title {
+    text-align: center;
+    color: #bacbf6;
+    margin-bottom: 30px;
+}
+
+/* Formulaire */
+.search-form {
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    gap: 12px;
+    background: none;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #00000010;
+}
+
+.search-input {
+    flex: 1;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    outline: none;
+    background: none;
+    font-size: 20px;
+    font-weight: bolder;
+    --search-input-placeholder-color: gray;
+    color: white;
+}
+
+.search-input:focus {
+    border-color: #2563eb;
+
+}
+
+.search-button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 7px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.search-button:hover {
+    background: #1d4ed8;
+}
+
+/* Trajet */
+.route-title {
+    text-align: center;
+    color: #6d89cf;
+    margin: 30px 0;
+}
+
+/* Carte */
+.itineraire-card {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 22px;
+    background: none;
+    border-radius: 12px;
+    border-left: 5px solid #a5beff;
+    box-shadow: 0 4px 15px #00000010;
+}
+
+.itineraire-card h3 {
+    color: #6d89cf;
+}
+
+/* Étapes */
+.itineraire-etape {
+    margin-top: 15px;
+    padding: 15px;
+    background: none;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+
+.itineraire-etape h4 {
+    color: #334155;
+}
+
+.loading {
+    text-align: center;
+    color: #2563eb;
+}
+
+.error {
+    text-align: center;
+    color: #dc2626;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .search-form {
+        flex-direction: column;
+    }
+}
+p{
+    color: white;
+    padding-block: 1vw;
+}
