@@ -1,5 +1,5 @@
 
-import Itineraire from "./pages/Itineraire";
+import Itineraire from "./pages/itineraire.jsx";
 
 function App() {
     return (
